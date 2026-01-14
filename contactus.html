@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<marquee>
+    
+<h1> <font size = "4">  <b>  WELCOME TO GAMBTECH UNIVERSITY </b> </h1>
+     <!-- contents -->
+</marquee>
+
+
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fish World</title>
+
+<style>
+    body { margin: 0; background:#e6f7ff; font-family: Arial; }
+
+    nav {
+        background:#0077b6;
+        padding:25px;
+        text-align:center;
+    }
+
+    nav button {
+        background:yellow;
+        border:none;
+        padding:10px 20px;
+        margin:5px;
+        border-radius:5px;
+        cursor:pointer;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .section {
+        display:none;
+        padding:25px;
+        text-align:center;
+    }
+
+    .gallery {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:15px;
+        margin-top:20px;
+    }
+
+    .gallery img, .info-img, .habitat-img, .food-img {
+        width:100%;
+        border-radius:10px;
+    }
+
+    ul {
+        list-style:none;
+        padding:0;
+        font-size:20px;
+    }
+
+    ul li {
+        margin:8px 0;
+    }
+
+    .row {
+        display:flex;
+        gap:20px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .row div {
+        width:300px;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <button onclick="show('gallery')"><a href="file:///C:/Users/USER/OneDrive/Desktop/Clifford/index.html">Home</a></button>
+    <button onclick="show('gallery')"><a href="file:///C:/Users/USER/OneDrive/Desktop/Clifford/Schhppp.html">Galarry</a></button>
+    <button onclick="show('Appl')"><a href="file:///C:/Users/USER/OneDrive/Desktop/Assign/new%20page%20uni.html">Apply For A Course</a></button>
+    <button onclick="show('Appl')"><a href="file:///C:/Users/USER/OneDrive/Desktop/Clifford/contactus.html">Contact US</a></button
+
+
+
+ <h1>Contact Us</h1>
+    <div class="container">
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="POST">
+          <label for="name">Your Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Your Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" required></textarea><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+        <div id="successMessage" class="success-message">
+          Thank you for contacting us!<br />
+          We will Contact you within a short time!
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get the form and success message elements
+      var contactForm = document.getElementById("contactForm");
+      var successMessage = document.getElementById("successMessage");
+
+      // Add event listener for form submission
+      contactForm.addEventListener("submit", function (event) {
+        // Prevent default form submission
+        event.preventDefault();
+        // Show the success message
+        successMessage.style.display = "block";
+        // Reset the form
+        contactForm.reset();
+        // Hide the success message after 3 seconds
+        setTimeout(function () {
+          successMessage.style.display = "none";
+        }, 5000);
+      });
+    </script>
+	
+	</html>
